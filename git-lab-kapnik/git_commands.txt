@@ -1,0 +1,16 @@
+  500  git check -b branch-B
+  501  git checkout -b branch-B
+  502  echo "Feature B" >> module_14.py
+  503  git add module_14.py
+  504  git commit -m "Добавлены изменения в модуль B"
+  505  git checkout -b branch-C
+  506  echo "Feature C" >> module_14.py
+  507  fit add module_14.py
+  508  git add module_14.py
+  509  git commit -m "Добавлены изменения в модуль С"
+  510  git checkout main
+  511  git merge branch-A -m "объединил ветку А в main"
+  512  git merge branch-B -m "объединил ветку B в main"
+  513  git merge branch-C -m "объединил ветку С в main"
+  514  git log --graph --oneline --all
+  515  clear
